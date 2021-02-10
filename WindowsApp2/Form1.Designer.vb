@@ -23,21 +23,32 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'CheckedListBox1
         '
         Me.CheckedListBox1.FormattingEnabled = True
-        Me.CheckedListBox1.Location = New System.Drawing.Point(319, 125)
+        Me.CheckedListBox1.Location = New System.Drawing.Point(329, 231)
         Me.CheckedListBox1.Name = "CheckedListBox1"
         Me.CheckedListBox1.Size = New System.Drawing.Size(105, 184)
         Me.CheckedListBox1.TabIndex = 0
+        '
+        'Label1
+        '
+        Me.Label1.Font = New System.Drawing.Font("Sultan normal", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(178, Byte))
+        Me.Label1.Location = New System.Drawing.Point(247, 99)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(249, 63)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "قروب البرمجة"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.CheckedListBox1)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -46,4 +57,5 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents CheckedListBox1 As CheckedListBox
+    Friend WithEvents Label1 As Label
 End Class

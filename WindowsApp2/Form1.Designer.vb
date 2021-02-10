@@ -24,32 +24,42 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'CheckedListBox1
         '
         Me.CheckedListBox1.FormattingEnabled = True
-        Me.CheckedListBox1.Location = New System.Drawing.Point(478, 183)
-        Me.CheckedListBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckedListBox1.Location = New System.Drawing.Point(319, 125)
         Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(156, 244)
+        Me.CheckedListBox1.Size = New System.Drawing.Size(105, 154)
         Me.CheckedListBox1.TabIndex = 0
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(851, 88)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(567, 60)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 27)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(135, 20)
         Me.DateTimePicker1.TabIndex = 1
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(495, 178)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1200, 658)
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.CheckedListBox1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -58,4 +68,5 @@ Partial Class Form1
 
     Friend WithEvents CheckedListBox1 As CheckedListBox
     Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents Button1 As Button
 End Class
